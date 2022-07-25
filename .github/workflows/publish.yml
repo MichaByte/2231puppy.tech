@@ -1,0 +1,20 @@
+name: Publish Site
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    types:
+      - closed
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hugo Deploy GitHub Pages
+        uses: benmatselby/hugo-deploy-gh-pages@v1.16.0
+        with:
+          cname: 2231puppy.tech
+          go_version: 1.18.4
+          hugo_version: 0.101.0
+          target_branch: gh-pages
+          target_repo: https://github.com/2231puppy/2231puppy.tech
