@@ -15,5 +15,5 @@ jobs:
           GO_VERSION: 1.18.4
           HUGO_VERSION: 0.101.0
           TARGET_BRANCH: gh-pages
-          TARGET_REPO: https://github.com/2231puppy/2231puppy.tech
+          TARGET_REPO: 2231puppy/2231puppy.tech
           TOKEN: ${{ secrets.PAGES_PAT }}
