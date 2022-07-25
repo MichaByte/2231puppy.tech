@@ -1,6 +1,6 @@
 ---
 title: "E-Spinner project - Intro"
-date: 2022-06-28T15:44:49-04:00
+date: 2022-07-25T15:44:49-04:00
 draft: false
 tags:
   - Current Projects
