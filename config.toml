@@ -6,6 +6,16 @@ theme = "PaperMod"
 
 [params]
 hideFooter = true
+showReadingTime = true
+showBreadCrumbs = true
+
+[params.homeInfoParams]
+title = "Hi there 👋"
+content = "I'm 2231puppy/Micha, an aspiring fullstack dev."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/2231puppy"
 
 [params.copyright]
 name = "Micha"
