@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v1
+        with:
+          submodules: true
 
       - name: Hugo Deploy GitHub Pages
         uses: benmatselby/hugo-deploy-gh-pages@v1.16.0
