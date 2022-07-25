@@ -1,0 +1,36 @@
+baseURL = 'https://2231puppy.tech/'
+languageCode = 'en-us'
+DefaultContentLanguage = "en" # Change this to change the site's language
+title = '2231puppy.tech'
+theme = "PaperMod"
+
+[params]
+hideFooter = true
+
+[params.copyright]
+name = "Micha"
+url = "https://2231puppy.tech/"
+prefix = "[2231puppy.tech by 2231puppy](https://2231puppy.tech/)"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[menu]
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "posts"
+name = "All posts"
+url = "/posts/"
+weight = 30
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search"
+weight = 20
