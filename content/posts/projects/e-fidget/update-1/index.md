@@ -1,7 +1,7 @@
 ---
 title: "E-Fidget project - Update 1"
 date: 2022-08-06T00:00:00-04:00
-draft: true
+draft: false
 tags:
   - Current Projects
   - Hardware
@@ -13,6 +13,6 @@ Hi! I've been working a little on the schematic for the E-Fidget, and it's going
 _(For those wondering, this is KiCad 6 with the Dracula color theme on macOS.)_
 
 There are some changes that I have planned, like switching out the transistors for FETs (Thanks for suggesting that, you know who you are!). Cleaning up the schematic is also on my agenda. In the meantime, I've started on the layout, but I don't think
-that's ready to share quite yet (It's ugly and not 10% done). However, what I will say is that the final board will likely be a 4-layer, 40mm (~1.6 inches). radius circle. I'll be sure to make another post soon with more info!
+that's ready to share quite yet (It's ugly and not 10% done). However, what I will say is that the final board will likely be a 4-layer, 40mm (~1.6 inch) radius circle. I'll be sure to make another post soon with more info!
 
 P.S. This will be a 100% OSHW and OSS project when I'm done!
