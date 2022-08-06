@@ -2,7 +2,7 @@
 
 ## I'm an aspiring fullstack developer
 
-![Image of my cats](https://github.com/2231puppy/2231puppy/raw/main/cat_picture.png)
+![Art of my cats](./images/cat_picture.png)
 
 _I commissioned this beautiful art of my cats from [@TheColorfulKayak](https://www.instagram.com/TheColorfulKayak/)_
 
