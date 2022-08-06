@@ -1,5 +1,5 @@
 ---
-title: "E-Spinner project - Intro"
+title: "E-Fidget project - Intro"
 date: 2022-07-25T00:00:00-04:00
 draft: false
 tags:
@@ -7,7 +7,7 @@ tags:
   - Hardware
 ---
 
-Hello again! Recently, I've been working on a project I'm calling the E-Spinner, a battery-powered fidget spinner for lazy people. Here's the rundown:
+Hello again! Recently, I've been working on a project I'm calling the E-Fidget, a battery-powered fidget spinner for lazy people. Here's the rundown:
 
 ### How it works
 
@@ -25,3 +25,7 @@ I'm going to be using the RP2040 microcontroller as the brains of the operation.
 vibration motors, driven by transistors.
 
 #### That's all for now, check back later for updates :)
+
+### Changelog
+
+2022-08-06: Changed title to E-Fidget to reflect project name.
