@@ -1,5 +1,5 @@
 +++
-title = "E-Fidget project - Update 1"
+title = "E-Fidget - Update 1"
 date = 2022-08-06T04:00:00.000Z
 draft = false
 tags = [ "Current Projects", "Hardware", "Updates" ]
