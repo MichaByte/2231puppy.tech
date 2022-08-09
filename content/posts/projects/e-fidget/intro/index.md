@@ -1,11 +1,9 @@
----
-title: "E-Fidget project - Intro"
-date: 2022-07-25T00:00:00-04:00
-draft: false
-tags:
-  - Current Projects
-  - Hardware
----
++++
+title = "E-Fidget project - Intro"
+date = 2022-07-25T04:00:00.000Z
+draft = false
+tags = [ "Current Projects", "Hardware" ]
++++
 
 Hello again! Recently, I've been working on a project I'm calling the E-Fidget, a battery-powered fidget spinner for lazy people. Here's the rundown:
 

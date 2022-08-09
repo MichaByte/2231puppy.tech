@@ -1,12 +1,9 @@
----
-title: "E-Fidget project - Update 1"
-date: 2022-08-06T00:00:00-04:00
-draft: false
-tags:
-  - Current Projects
-  - Hardware
-  - Updates
----
++++
+title = "E-Fidget project - Update 1"
+date = 2022-08-06T04:00:00.000Z
+draft = false
+tags = [ "Current Projects", "Hardware", "Updates" ]
++++
 
 Hi! I've been working a little on the schematic for the E-Fidget, and it's going great! Here's what I have:
 ![Schematic of the E-Fidget, including the RP2040 and supporting circuitry, along with 8 transistors](./images/Schematic.png)
