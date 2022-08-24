@@ -1,6 +1,6 @@
 +++
 title = "E-Fidget - Getting Started"
-date = 2022-09-25T04:00:00.000Z
+date = 2022-08-24T04:00:00.000Z
 draft = false
 tags = [ "Current Projects", "Hardware" ]
 aliases = [ "/e-fidget" ]
