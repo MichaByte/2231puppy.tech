@@ -16,7 +16,7 @@ Skills: TS / Svelte / SvelteKit // TailwindCSS // Python / FastAPI // Godot
 - 🤔 I’m looking for help with whatever problems you see with my code!
 - 💬 Ask me about 3D printing!
 - 📫 How to reach me: Just drop me an email (this domain without the .tech part, at gmail dot com)
-- 😄 Pronouns: he/him
+- 😄 Pronouns: they/them
 - ⚡ Fun fact: I LOVE to build robots!
 
 ![Discord status](https://dcbadge.vercel.app/api/shield/525432105224765494?logoColor=presence&theme=blurple&style=flat)
