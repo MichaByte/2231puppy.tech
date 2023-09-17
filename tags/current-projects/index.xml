@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Current Projects on 2231puppy.tech</title>
+    <link>https://2231puppy.tech/tags/current-projects/</link>
+    <description>Recent content in Current Projects on 2231puppy.tech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Aug 2023 04:00:00 +0000</lastBuildDate><atom:link href="https://2231puppy.tech/tags/current-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E-Fidget - Update 3</title>
+      <link>https://2231puppy.tech/posts/projects/e-fidget/update-3/</link>
+      <pubDate>Thu, 24 Aug 2023 04:00:00 +0000</pubDate>
+      
+      <guid>https://2231puppy.tech/posts/projects/e-fidget/update-3/</guid>
+      <description>Yes, I know it&amp;rsquo;s been almost a full year since my last update. Sorry - I&amp;rsquo;ll try to not let that happen again!
+Hey everyone! My last post on the E-Fidget was a quick status update on version 1. Since then, I&amp;rsquo;ve gone through 2 other versions of the main E-Fidget and two versions of its little sibling, the E-Fidget Lite.
+Version 1 of the E-Fidget Lite Version 2 of the E-Fidget Lite The most recent version of the E-Fidget (The E-Fidget Lite V2, if you&amp;rsquo;re keeping count) is the most successful version so far!</description>
+    </item>
+    
+    <item>
+      <title>E-Fidget - Update 2</title>
+      <link>https://2231puppy.tech/posts/projects/e-fidget/update-2/</link>
+      <pubDate>Thu, 25 Aug 2022 04:00:00 +0000</pubDate>
+      
+      <guid>https://2231puppy.tech/posts/projects/e-fidget/update-2/</guid>
+      <description>Hello there! I&amp;rsquo;m excited to announce that the E-Fidget&amp;rsquo;s schematic and layout are complete! I&amp;rsquo;ve sent the gerber files out to a PCB manufacturer, and I&amp;rsquo;ve ordered all the parts. I&amp;rsquo;ll have a full ordering tutorial soon! In the meantime, here&amp;rsquo;s a preview: </description>
+    </item>
+    
+    <item>
+      <title>E-Fidget - Getting Started</title>
+      <link>https://2231puppy.tech/posts/projects/e-fidget/getting-started/</link>
+      <pubDate>Wed, 24 Aug 2022 04:00:00 +0000</pubDate>
+      
+      <guid>https://2231puppy.tech/posts/projects/e-fidget/getting-started/</guid>
+      <description>The KiCad v6 source and gerbers can be found here. The board will run CircuitPython. Full instructions will be on this page soon!</description>
+    </item>
+    
+    <item>
+      <title>E-Fidget - Update 1</title>
+      <link>https://2231puppy.tech/posts/projects/e-fidget/update-1/</link>
+      <pubDate>Sat, 06 Aug 2022 04:00:00 +0000</pubDate>
+      
+      <guid>https://2231puppy.tech/posts/projects/e-fidget/update-1/</guid>
+      <description>Hi! I&amp;rsquo;ve been working a little on the schematic for the E-Fidget, and it&amp;rsquo;s going great! Here&amp;rsquo;s what I have: (For those wondering, this is KiCad 6 with the Dracula color scheme on macOS.)
+There are some changes that I have planned, like switching out the transistors for FETs (Thanks for suggesting that, you know who you are!). Cleaning up the schematic is also on my agenda. In the meantime, I&amp;rsquo;ve started on the layout, but I don&amp;rsquo;t think that&amp;rsquo;s ready to share quite yet (It&amp;rsquo;s ugly and not 10% done).</description>
+    </item>
+    
+    <item>
+      <title>E-Fidget - Intro</title>
+      <link>https://2231puppy.tech/posts/projects/e-fidget/intro/</link>
+      <pubDate>Mon, 25 Jul 2022 04:00:00 +0000</pubDate>
+      
+      <guid>https://2231puppy.tech/posts/projects/e-fidget/intro/</guid>
+      <description>Hello again! Recently, I&amp;rsquo;ve been working on a project I&amp;rsquo;m calling the E-Fidget, a battery-powered fidget spinner for lazy people. Here&amp;rsquo;s the rundown:
+How it works Essentially, there&amp;rsquo;s going to be some vibration motors, arranged in a circle. In the center, there&amp;rsquo;ll be a button to make the motors turn on and off very rapidly, in a circular motion. The idea is that this will emulate a spinning motion, while still working in your pocket!</description>
+    </item>
+    
+  </channel>
+</rss>

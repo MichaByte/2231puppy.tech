@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>KiCad on Android: The PCB Design Setup No One Asked For | 2231puppy.tech</title>
+<meta name="keywords" content="">
+<meta name="description" content="What life? Why exist? How live? Why do I mean? If you find yourself asking asking these big questions, you&rsquo;re probably a robot. No offense, ChatGPT. A real human would be asking much more important questions of themselves:
+How the heck do I run KiCad on Android? Because there&rsquo;s nothing more important in life than running an open-source EDA suite on your smartphone.
+Whether or not that assumption is correct doesn&rsquo;t really matter.">
+<meta name="author" content="">
+<link rel="canonical" href="https://2231puppy.tech/posts/personal-setup/kicad-on-android/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://2231puppy.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://2231puppy.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://2231puppy.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://2231puppy.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://2231puppy.tech/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="KiCad on Android: The PCB Design Setup No One Asked For" />
+<meta property="og:description" content="What life? Why exist? How live? Why do I mean? If you find yourself asking asking these big questions, you&rsquo;re probably a robot. No offense, ChatGPT. A real human would be asking much more important questions of themselves:
+How the heck do I run KiCad on Android? Because there&rsquo;s nothing more important in life than running an open-source EDA suite on your smartphone.
+Whether or not that assumption is correct doesn&rsquo;t really matter." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://2231puppy.tech/posts/personal-setup/kicad-on-android/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-17T14:36:00-04:00" />
+<meta property="article:modified_time" content="2023-09-17T14:36:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="KiCad on Android: The PCB Design Setup No One Asked For"/>
+<meta name="twitter:description" content="What life? Why exist? How live? Why do I mean? If you find yourself asking asking these big questions, you&rsquo;re probably a robot. No offense, ChatGPT. A real human would be asking much more important questions of themselves:
+How the heck do I run KiCad on Android? Because there&rsquo;s nothing more important in life than running an open-source EDA suite on your smartphone.
+Whether or not that assumption is correct doesn&rsquo;t really matter."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://2231puppy.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "KiCad on Android: The PCB Design Setup No One Asked For",
+      "item": "https://2231puppy.tech/posts/personal-setup/kicad-on-android/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "KiCad on Android: The PCB Design Setup No One Asked For",
+  "name": "KiCad on Android: The PCB Design Setup No One Asked For",
+  "description": "What life? Why exist? How live? Why do I mean? If you find yourself asking asking these big questions, you\u0026rsquo;re probably a robot. No offense, ChatGPT. A real human would be asking much more important questions of themselves:\nHow the heck do I run KiCad on Android? Because there\u0026rsquo;s nothing more important in life than running an open-source EDA suite on your smartphone.\nWhether or not that assumption is correct doesn\u0026rsquo;t really matter.",
+  "keywords": [
+    
+  ],
+  "articleBody": "What life? Why exist? How live? Why do I mean? If you find yourself asking asking these big questions, you’re probably a robot. No offense, ChatGPT. A real human would be asking much more important questions of themselves:\nHow the heck do I run KiCad on Android? Because there’s nothing more important in life than running an open-source EDA suite on your smartphone.\nWhether or not that assumption is correct doesn’t really matter. Considering that the universe will probably expand and collapse an infinite amount of times, that means that KiCad will be created an infinite amount of times as well. If you don’t believe me, see the infinite monkey theorem. Somewhere, sometime, it was bound to happen: A bored 15 year old gets the best open-source PCB design tool to work under a mobile operating system.\nBUT WHY!? In times like these, it’s best not to ask why, but how!\nThat’s Micha-speak for “there’s absolutely no reason and I just felt like it”. So here it is:\nKiCad on Android: The First Guide Ever Note that I’ve taken care so that this guide can be followed even if your phone/tablet is your only device. If you have a computer on hand that you can/want to use, you should be able to omit the steps involving Shizuku and simply run the command mentioned in that section over ADB on your computer.\nPrerequisites A somewhat modern Android phone or tablet. It does not need to be rooted. Termux installed on your device, with storage set up (see its wiki, tl;dr: termux-setup-storage) Shizuku, a rootless privilege escalation system. This might be optional for your device, but I got an error code 9 while setting up TermuxArch, and the only on-device way I can think of to fix it is via Shizuku. Make sure to read [the instructions](https://shizuku.rikka.app/guide/setup/ #start-via-wireless-debugging) on how to set it up, as I won’t be covering that here! The AVNC app from F-Droid About 8GB of free space for KiCad with 3D models Basic experience working with the terminal Instructions Open Shizuku. Select “Use Shizuku in terminal apps”. Press “Export files” and select your Termux home directory from the sidebar. Open Termux and run nano ~/rish. Go to the end of the second-to-last line of the file (use Termux’s arrow keys) and change \"PKG\" to \"com.termux\". Save and exit with Ctrl-s and Ctrl+x. Run sh ~/rish. Now, within the ADB shell, run /system/bin/device_config put activity_manager max_phantom_processes 2147483647. This will disable the phantom process killer, which gets in the way of the next step. If there are no errors, press Ctrl-d to exit. Next, run curl -OL https://TermuxArch.github.io/TermuxArch/setupTermuxArch \u0026\u0026 bash setupTermuxArch to install an Arch Linux environment. After it’s done, you’ll be in your new Arch installation. Run passwd user and set a password you’ll remember. After that, run su user to change to the default user account.\nYou’re nearly there!\nRun sudo pacman -Syu xfce4 xfce4-goodies tigervnc KiCad KiCad-library KiCad-library-3d and press Y when prompted. Finally, you can run vncserver :1 and connect via AVNC - the address will be 127.0.0.1:5901. Now, go to the menu in the top left, hover over Science, and tap on KiCad. Now, revel in the glory of running an app in a place it was never meant to be run!\nTo start it after the initial installation, open Termux, run startarch, run su user, and then run vncserver :1.\nTips You can change the XFCE font size by going to Applications \u003e Settings \u003e Settings Manager \u003e Appearance \u003e Fonts \u003e Default Font and setting the size at the bottom of the dialog. I set mine to 22.\nYou can also set AVNC to use touchpad mode, where your swipes on the phone screen move the cursor in the direction of the swipe instead of to your finger’s exact location on the screen. It’s hard to explain, but it’s handy on a small screen. To do this, go to AVNC and press \u0026 hold on your saved connection (save it if you haven’t done so, it won’t work with a one-time connection). Tap Advanced and change “Gesture style” to “Touchpad”. Press Save in the top right and connect. Now, your cursor will use relative motions instead of absolute ones - handy!\nSomeone asked me if you can use an external mouse with this setup. There’s no reason why you couldn’t, so just connect it via USB or Bluetooth. The same should also work for a keyboard.\nTermux likes to gobble up your battery, so when you’re done and have saved your KiCad project, go to your notifications and kill the Termux session from its notification.\nEnjoy!\nP.S. If I got anything wrong here, or if you’re having trouble, send me an email at micha@this domain name (look in your browser’s URL bar, it ends with .tech ;).\n",
+  "wordCount" : "804",
+  "inLanguage": "en",
+  "datePublished": "2023-09-17T14:36:00-04:00",
+  "dateModified": "2023-09-17T14:36:00-04:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://2231puppy.tech/posts/personal-setup/kicad-on-android/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "2231puppy.tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://2231puppy.tech/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://2231puppy.tech/" accesskey="h" title="2231puppy.tech (Alt + H)">2231puppy.tech</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://2231puppy.tech/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://2231puppy.tech/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://2231puppy.tech/posts/" title="All posts">
+                    <span>All posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://2231puppy.tech/">Home</a>&nbsp;»&nbsp;<a href="https://2231puppy.tech/posts/">Posts</a></div>
+    <h1 class="post-title">
+      KiCad on Android: The PCB Design Setup No One Asked For
+    </h1>
+    <div class="post-meta"><span title='2023-09-17 14:36:00 -0400 -0400'>September 17, 2023</span>&nbsp;·&nbsp;4 min
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="what-life-why-exist-how-live-why-do-i-mean">What life? Why exist? How live? Why do I mean?<a hidden class="anchor" aria-hidden="true" href="#what-life-why-exist-how-live-why-do-i-mean">#</a></h2>
+<p>If you find yourself asking asking these big questions, you&rsquo;re probably a robot. No offense, ChatGPT.
+A <em>real</em> human would be asking much more important questions of themselves:</p>
+<h3 id="how-the-heck-do-i-run-kicad-on-android">How the heck do I run KiCad on Android?<a hidden class="anchor" aria-hidden="true" href="#how-the-heck-do-i-run-kicad-on-android">#</a></h3>
+<p>Because there&rsquo;s nothing more important in life than running an open-source EDA suite on your smartphone.</p>
+<p>Whether or not that assumption is correct doesn&rsquo;t really matter. Considering that the universe will probably
+expand and collapse an infinite amount of times, that means that KiCad will be created an infinite amount of times
+as well. If you don&rsquo;t believe me, see <a href="https://en.wikipedia.org/wiki/Infinite_monkey_theorem">the infinite monkey theorem</a>.
+Somewhere, sometime, it was bound to happen: A bored 15 year old gets the best open-source PCB design tool
+to work under a mobile operating system.</p>
+<h3 id="_but-why_"><em>BUT WHY!?</em><a hidden class="anchor" aria-hidden="true" href="#_but-why_">#</a></h3>
+<p>In times like these, it&rsquo;s best not to ask why, but <strong>how!</strong></p>
+<h6 id="thats-micha-speak-for-theres-absolutely-no-reason-and-i-just-felt-like-it">That&rsquo;s Micha-speak for &ldquo;there&rsquo;s absolutely no reason and I just felt like it&rdquo;.<a hidden class="anchor" aria-hidden="true" href="#thats-micha-speak-for-theres-absolutely-no-reason-and-i-just-felt-like-it">#</a></h6>
+<p>So here it is:</p>
+<h3 id="kicad-on-android-the-first-guide-ever">KiCad on Android: The First Guide Ever<a hidden class="anchor" aria-hidden="true" href="#kicad-on-android-the-first-guide-ever">#</a></h3>
+<p><img loading="lazy" src="/posts/personal-setup/kicad-on-android/images/screenshot.png" alt="Screenshot of KiCad EDA software running on an Android mobile phone"  />
+</p>
+<p>Note that I&rsquo;ve taken care so that this guide can be followed even if your phone/tablet is your only device. If you have a computer
+on hand that you can/want to use, you should be able to omit the steps involving Shizuku and simply run the command mentioned in
+that section over ADB on your computer.</p>
+<h4 id="prerequisites">Prerequisites<a hidden class="anchor" aria-hidden="true" href="#prerequisites">#</a></h4>
+<ul>
+<li>A somewhat modern Android phone or tablet. It does <strong>not</strong> need to be rooted.</li>
+<li><a href="https://termux.dev/en/">Termux</a> installed on your device, with storage set up (see its wiki, tl;dr: <code>termux-setup-storage</code>)</li>
+<li><a href="https://apt.izzysoft.de/fdroid/index/apk/moe.shizuku.privileged.api">Shizuku</a>, a rootless privilege escalation system. This
+might be optional for your device, but I got an error code 9 while setting up TermuxArch, and the only on-device way I can think
+of to fix it is via Shizuku. Make sure to read [the instructions](<a href="https://shizuku.rikka.app/guide/setup/">https://shizuku.rikka.app/guide/setup/</a>
+#start-via-wireless-debugging) on how to set it up, as I won&rsquo;t be covering that here!</li>
+<li>The AVNC app from F-Droid</li>
+<li>About 8GB of free space for KiCad with 3D models</li>
+<li>Basic experience working with the terminal</li>
+</ul>
+<h4 id="instructions">Instructions<a hidden class="anchor" aria-hidden="true" href="#instructions">#</a></h4>
+<p>Open Shizuku. Select &ldquo;Use Shizuku in terminal apps&rdquo;. Press &ldquo;Export files&rdquo; and select your Termux home directory from the sidebar.
+Open Termux and run <code>nano ~/rish</code>. Go to the end of the second-to-last line of the file (use Termux&rsquo;s arrow keys) and
+change <code>&quot;PKG&quot;</code> to <code>&quot;com.termux&quot;</code>. Save and exit with Ctrl-s and Ctrl+x. Run <code>sh ~/rish</code>. Now, within the ADB shell, run
+<code>/system/bin/device_config put activity_manager max_phantom_processes 2147483647</code>. This will disable the phantom process killer,
+which gets in the way of the next step. If there are no errors, press Ctrl-d to exit. Next, run
+<code>curl -OL https://TermuxArch.github.io/TermuxArch/setupTermuxArch &amp;&amp; bash setupTermuxArch</code> to install an Arch Linux environment.
+After it&rsquo;s done, you&rsquo;ll be in your new Arch installation. Run <code>passwd user</code> and set a password you&rsquo;ll remember. After that, run
+<code>su user</code> to change to the default user account.</p>
+<p><em>You&rsquo;re nearly there!</em></p>
+<p>Run <code>sudo pacman -Syu xfce4 xfce4-goodies tigervnc KiCad KiCad-library KiCad-library-3d</code> and press <code>Y</code> when prompted. Finally,
+you can run <code>vncserver :1</code> and connect via AVNC - the address will be <code>127.0.0.1:5901</code>. Now, go to the menu in the top left,
+hover over Science, and tap on KiCad. Now, revel in the glory of running an app in a place it was never meant to be run!</p>
+<p>To start it after the initial installation, open Termux, run <code>startarch</code>, run <code>su user</code>, and then run <code>vncserver :1</code>.</p>
+<h4 id="tips">Tips<a hidden class="anchor" aria-hidden="true" href="#tips">#</a></h4>
+<p>You can change the XFCE font size by going to Applications &gt; Settings &gt; Settings Manager &gt; Appearance &gt; Fonts &gt; Default Font and setting the size at the bottom of the dialog. I set mine to 22.</p>
+<p>You can also set AVNC to use touchpad mode, where your swipes on the phone screen move the cursor in the direction of the swipe
+instead of to your finger&rsquo;s exact location on the screen. It&rsquo;s hard to explain, but it&rsquo;s handy on a small screen. To do this, go
+to AVNC and press &amp; hold on your saved connection (save it if you haven&rsquo;t done so, it won&rsquo;t work with a one-time connection). Tap
+Advanced and change &ldquo;Gesture style&rdquo; to &ldquo;Touchpad&rdquo;. Press Save in the top right and connect. Now, your cursor will use relative
+motions instead of absolute ones - handy!</p>
+<p>Someone asked me if you can use an external mouse with this setup. There&rsquo;s no reason why you couldn&rsquo;t, so just connect it via USB
+or Bluetooth. The same should also work for a keyboard.</p>
+<p>Termux likes to gobble up your battery, so when you&rsquo;re done and have saved your KiCad project, go to your notifications and kill
+the Termux session from its notification.</p>
+<p>Enjoy!</p>
+<p><em>P.S. If I got anything wrong here, or if you&rsquo;re having trouble, send me an email at micha@this domain name (look in your browser&rsquo;s URL bar, it ends with .tech ;).</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

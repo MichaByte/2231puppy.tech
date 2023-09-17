@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Meta on 2231puppy.tech</title>
+    <link>https://2231puppy.tech/tags/meta/</link>
+    <description>Recent content in Meta on 2231puppy.tech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jun 2022 19:44:49 +0000</lastBuildDate><atom:link href="https://2231puppy.tech/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Started a Blog</title>
+      <link>https://2231puppy.tech/posts/i-started-a-blog/</link>
+      <pubDate>Tue, 28 Jun 2022 19:44:49 +0000</pubDate>
+      
+      <guid>https://2231puppy.tech/posts/i-started-a-blog/</guid>
+      <description>Hiya, internet! I&amp;rsquo;m 2231puppy/Micha, a teen programmer, game developer, aspiring digital musician, pixel artist, and vegan. I&amp;rsquo;ll be blogging about all of those things at one point or another. Here, you&amp;rsquo;ll find my rants, notes, discoveries, and more! Check back soon for a new post!
+Until next time!</description>
+    </item>
+    
+  </channel>
+</rss>
